@@ -1,25 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@android:color/darker_gray" />
 
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
-            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <Button
+            android:id="@+id/addButton1"
+            android:layout_width="match_parent"
 
-    </android.support.design.widget.AppBarLayout>
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Add+1"
+            android:textColor="@android:color/holo_orange_dark" />
 
-    <include layout="@layout/content_main" />
+        <Button
+            android:id="@+id/addButton2"
 
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Add+2"
+            android:textColor="@android:color/holo_green_dark" />
 
-</android.support.design.widget.CoordinatorLayout>
+        <Button
+            android:id="@+id/addButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/darker_gray"
+            android:text="Add+3"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/addButton4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Reset"
+            android:textColor="@android:color/holo_orange_dark" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="350dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/addButton12"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Add+1"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/addButton22"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Add+2"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <Button
+            android:id="@+id/addButton32"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/darker_gray"
+            android:text="Add+3"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/addButton42"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Reset"
+            android:textColor="@android:color/holo_orange_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>
